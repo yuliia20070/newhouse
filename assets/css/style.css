@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+    font-family: 'Unbounded';
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.mt100 {
+    margin-top: 110px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #113559;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.desc {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #113559;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.btn {
+    background-color: #6699CC;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.btn p {
+    color: white;
+    font-weight: 500;
+}
+
+.btn:hover {
+    border: 1px solid #6699CC;
+    border-radius: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn_ban {
+    background-color: #6699CC;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    width: 231px;
+}
+
+.btn_ban p {
+    color: white;
+    font-weight: 500;
+}
+
+.btn:hover p {
+    color: #6699CC;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Шрифты */
+@font-face {
+    font-family: 'Unbounded';
+    src: url(../fonts/Unbounded-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url(../fonts/Unbounded-Medium.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url(../fonts/Unbounded-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url(../fonts/Unbounded-Light.ttf);
+    font-weight: 400;
+}
+
+/* Шрифты */
+
+/* header start */
+header {
+    background-color: white;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #113559;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+}
+
+.button_tel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+}
+
+.button_tel a {
+    font-size: 18px;
+    color: #113559;
+    font-weight: 500;
+}
+
+.logo img {
+    width: 100px;
+    height: 77px;
+    cursor: pointer;
+}
+
+/* header end */
+
+/* banner start */
+.banner {
+    background: url(../media/banner/image.png) no-repeat;
+    background-size: cover;
+    /* height: 794px; */
+    height: 80vh;
+}
+
+h1 span {
+    font-weight: 600;
+}
+
+.banner_main {
+    /* height: 794px; */
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.banner_text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+}
+
+.banner_text .btn {
+    border: none;
+    width: 230px;
+}
+
+.banner .btn_ban:hover {
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.btn_ban:hover p {
+    color: white;
+    cursor: pointer;
+}
+
+/* banner end */
+
+/* about start */
+.about_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 170px;
+}
+
+.pr {
+    width: 532px;
+    height: 532px;
+    border-radius: 30px;
+    background-color: #113559;
+    position: absolute;
+}
+
+.about_l img {
+    width: 532px;
+    height: 532px;
+    border-radius: 30px;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+
+.about_r span{
+    font-weight: 600;
+}
+
+/* about end */
+
+/* katalog start */
+
+.card_kt img{
+    width: 330px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card_kt .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_kt {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 377px;
+    border: 1px solid black;
+    border-radius: 30px;
+    gap: 28px;
+}
+
+.card_kt .desc {
+    display: flex;
+    flex: 1;
+}
+
+.ktlg_main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* katalog end */
+
+/* galery start */
+
+.dropbtn {
+    background-color: rgba(51, 68, 153, 0);
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.dropdown button{
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #113559;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #a0c699;
+}
+
+.show {
+    display: block;
+}
+
+.card_gal{
+    width: 300px;
+}
+
+.card_gal img{
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.link a{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: none;
+}
+
+.img_gal{
+    position: relative;
+}
+
+.img_gal:hover img{
+    filter: brightness(50%);
+}
+
+.img_gal:hover .link a{
+    display: block;
+}
+
+.link{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.galery_main{
+    display: flex;
+    justify-content: space-between;
+}
+/* galery end */
+
+/* carditem page */
+.about_item{
+    display: flex;
+    gap: 50px;
+}
+
+.left img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* carditem page */
+
+/* Обновлённые стили для слайдера */
+.response {
+    position: relative;
+    overflow: hidden;
+}
+
+.resp_main {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease;
+    padding: 10px 0; /* Добавляем немного отступа */
+}
+
+.card_re {
+    flex: 0 0 auto;
+    width: 373px;
+    height: 500px;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.arrows {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.arrowl, .arrowr {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: static; /* Изменяем на static для нового расположения */
+    transform: none;
+}
+
+.arrowl:hover img, .arrowr:hover img {
+    transform: scale(1.1);
+}
+
+/* Скрываем стрелки, если слайдер не нужен */
+.resp_main.no-slider ~ .arrows {
+    display: none;
+}
+
+/* partners start */
+.part {
+    border: 2px solid black;
+    padding: 50px;
+}
+
+.part_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part img{
+    filter: opacity(60%);
+}
+
+.part img:hover{
+    filter: opacity(100%);
+    cursor: pointer;
+}
+
+/* partners end */
+
+/* accord */
+.accord button{
+    border: 1px solid #113559;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.accord{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accord button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.accordion {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 15px 0;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active .accordion:hover {
+    background-color: transparent;
+}
+
+.panel {
+    padding: 18px 0;
+    background-color: transparent;
+    display: none;
+    overflow: hidden;
+}
+/* accord */
+
+/* news start */
+.news_main {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+}
+
+.news_r {
+    width: 1400px;
+    height: 270px;
+    border-radius: 30px;
+    background-color: #113559;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 67px;
+}
+
+.news_r:hover {
+    transform: translateY(-5%);
+}
+
+.info .desc {
+    color: white;
+}
+
+.info h3 {
+    font-weight: 500;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+}
+
+/* news end */
+
+/* subscribe start */
+.subs_main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+}
+
+.info_sub h3 {
+    color: black;
+    font-weight: 500;
+}
+
+.info_sub {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+form input {
+    border: 1px solid #6699CC;
+    border-radius: 30px;
+    padding: 24px;
+    width: 458px;
+}
+
+form .btn {
+    width: 231px;
+    height: 65px;
+}
+
+form {
+    display: flex;
+    gap: 43px;
+}
+
+.info_sub span {
+    text-decoration: underline;
+    color: #6699CC;
+}
+
+/* subscribe end */
+
+/* contacts start */
+.left_c {
+    display: flex;
+    flex-direction: column;
+    gap: 73px;
+}
+
+.left_c h2 {
+    text-align: center;
+}
+
+.info_c {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 33px;
+    cursor: pointer;
+}
+
+.info_c span {
+    font-weight: 500;
+}
+
+/* contacts end */
+
+/* footer start */
+footer {
+    background-color: #113559;
+    padding: 85px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-size: 20;
+    font-weight: 500;
+}
+
+/* footer end */
+
+.arrow_top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
